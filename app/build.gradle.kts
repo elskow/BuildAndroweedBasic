@@ -39,7 +39,7 @@ android {
         jvmTarget = "11"
     }
 
-    lintOptions {
+    lint {
         if (System.getenv("CI") != null) {
             abortOnError = false
             warningsAsErrors = false
