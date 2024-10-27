@@ -50,6 +50,14 @@ jobs:
           fi
           echo "::set-output name=version_name::$VERSION_NAME"
 
+      - name: Delete Existing Release
+        if: always()
+        run: |
+          gh release delete ${{ steps.determine_version.outputs.version_name }} -y || true
+          gh release delete-tag ${{ steps.determine_version.outputs.version_name }} || true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
