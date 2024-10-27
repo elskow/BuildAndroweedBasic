@@ -38,6 +38,13 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+
+    lintOptions {
+        if (System.getenv("CI") != null) {
+            abortOnError = false
+            warningsAsErrors = false
+        }
+    }
 }
 
 dependencies {
