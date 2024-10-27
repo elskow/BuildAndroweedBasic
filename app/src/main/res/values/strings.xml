@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">News Term</string>
+    <string name="about">About</string>
+    <string name="your_name">Helmy Luqmanulhakim</string>
+    <string name="your_email">xlirby@gmail.com</string>
+    <string name="detail_title">Detail</string>
+    <string name="about_app_title">About App</string>
+    <string name="about_app_description">News Term is a simple news app that provides you with the latest updates and stories. Stay informed with our curated content.</string>
+    <string name="app_version">Version 1.0.0</string>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CircleImageView" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="ChipTextStyle" parent="TextAppearance.MaterialComponents.Chip">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/inter_medium</item>
+    </style>
+
+    <style name="SharedElementTransition">
+        <item name="android:windowSharedElementEnterTransition">
+            @transition/shared_element_transition
+        </item>
+        <item name="android:windowSharedElementExitTransition">
+            @transition/shared_element_transition
+        </item>
+    </style>
+</resources>
