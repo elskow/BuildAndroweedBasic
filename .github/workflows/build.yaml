@@ -36,6 +36,8 @@ jobs:
 
       - name: Build with Gradle
         run: ./gradlew build
+        env:
+          CI: true
 
       - name: Determine Version Name
         id: determine_version
